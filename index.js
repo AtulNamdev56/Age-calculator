@@ -8,6 +8,10 @@ let Result = document.getElementById("answer");
 function CalculateAge(){
 let BirthDate = new Date(userinput.value);
 
+function getDaysInMonth(year,month){
+    return new Date(year,month,0).getDate();
+}
+
 let d1 =BirthDate.getDate();
 let m1 =BirthDate.getMonth() +1;
 let y1 =BirthDate.getFullYear();
@@ -38,7 +42,7 @@ if(d2>=d1){
 }
 else{
     m3--
-    d3 = getDaysInMonth(y1,m1)+d2 -d1;
+    d3 = getDaysInMonth(y1,m1)+d2-d1;
 
 }
 if(m3<0){m3=11;
@@ -46,6 +50,4 @@ if(m3<0){m3=11;
 }
 Result.innerHTML =`You are <span>${y3}</span> years, <span>${m3}</span> months and <span>${d3}</span> days old`;
 }
-function getDaysInMonth(year,month){
-    return(year,month,0).getDate();
-}
+
