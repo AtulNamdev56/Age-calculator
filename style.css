@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(117,86,204,1) 0%, rgba(213,105,167,1) 90% );
+}
+.container{max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 15px 10px 25px rgb(0, 0, 0);
+    border-radius: 20px;
+    height: 450px
+}
+.box{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #85FFBD;
+background-image: linear-gradient(180deg, #85FFBD 0%, #FFFB7D 100%);
+width: 400px;
+border-radius: 20px;
+justify-content: space-around;
+height: 450px;
+
+
+
+}
+button{
+    height: 2rem;
+    width: 4rem;
+}
+.inputfield{
+    display: flex;
+    flex-direction: column;
+    
+}
+.input{margin-bottom: 10px;
+display: flex;
+flex-direction: column;
+gap: 10px;}
+.button{margin-top: 10px;
+margin-left: 30px;
+cursor: pointer;}
+#answer{
+    font-size: 20px;
+}
+#answer span{
+    color: #00a2ff;
+}
+/* .input input::-webkit-calendar-picker-indicator{background-position: calc(100% -10px);
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+height: auto;
+width: auto;
+} */
